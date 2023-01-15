@@ -36,10 +36,26 @@ class AutoFitTextureView @JvmOverloads constructor(
             setMeasuredDimension(width, height)
         } else {
             if (width < height * ratioWidth / ratioHeight) {
-                setMeasuredDimension(width, width * ratioHeight / ratioWidth)
-            } else {
+                // setMeasuredDimension(width, width * mRatioHeight / mRatioWidth);
                 setMeasuredDimension(height * ratioWidth / ratioHeight, height)
+            } else {
+                //setMeasuredDimension(height * mRatioWidth / mRatioHeight, height);
+                setMeasuredDimension(width, width * ratioHeight / ratioWidth)
             }
         }
     }
+//    override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
+//        super.onMeasure(widthMeasureSpec, heightMeasureSpec)
+//        val width = MeasureSpec.getSize(widthMeasureSpec)
+//        val height = MeasureSpec.getSize(heightMeasureSpec)
+//        if (0 == ratioWidth || 0 == ratioHeight) {
+//            setMeasuredDimension(width, height)
+//        } else {
+//            if (width < height * ratioWidth / ratioHeight) {
+//                setMeasuredDimension(width, width * ratioHeight / ratioWidth)
+//            } else {
+//                setMeasuredDimension(height * ratioWidth / ratioHeight, height)
+//            }
+//        }
+//    }
 }

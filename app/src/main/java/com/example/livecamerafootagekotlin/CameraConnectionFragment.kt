@@ -31,7 +31,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
-import com.example.livecamerafootagekotlin.R
+import com.example.realtimeimagelabeling.AutoFitTextureView
+import com.example.realtimeimagelabeling.R
 import java.util.*
 import java.util.concurrent.Semaphore
 import java.util.concurrent.TimeUnit
